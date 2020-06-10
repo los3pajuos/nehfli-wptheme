@@ -1,0 +1,95 @@
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+    --blanco-light: #AAA;
+    --blanco: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+width: 90%;
+margin: auto;
+}
+header .logotipo {
+    color: var(--rojo);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+header {
+    padding: 30px 0;
+}
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: var(--blanco-light);
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover,
+header nav a.activo {
+    color: var(--blanco);
+}
+                                    /*     Pelicula Principal   */
+.pelicula-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: var(--blanco);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+.pelicula-principal .contenedor {
+    /* FIXME: Se supone que deberia colocarlo en el fondo, pero mas bien lo pone arriba, no entiendo cual es el error */
+    /* margin: 0 auto; */
+    margin-bottom: 6.25em;
+}
+.pelicula-principal .titulo {
+    font-weight: normal;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.15em;
+    max-width: 40%;
+    margin-bottom: 1.25em;
+}
+.pelicula-principal .boton {
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--blanco);
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.pelicula-principal .boton:hover {
+    background: var(--blanco);
+    color: var(--fondo);
+}
+.pelicula-principal .boton i {
+    margin-right: 1.25em;
+}
+
+                                 /*    Media Querys */
+
+                                 
